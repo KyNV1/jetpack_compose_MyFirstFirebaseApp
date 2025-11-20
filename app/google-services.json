@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "989821401530",
+    "project_id": "myfirstfirebaseapp-e4fae",
+    "storage_bucket": "myfirstfirebaseapp-e4fae.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:989821401530:android:af1b48f9917b46e99f0583",
+        "android_client_info": {
+          "package_name": "com.example.jetpack_compose_myfirstfirebaseapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAAYgL-y3zqlJGOQiRXSUX_m4ZWy0a9SKU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
