@@ -61,4 +61,15 @@ dependencies {
     androidTestImplementation(libs.androidx.compose.ui.test.junit4)
     debugImplementation(libs.androidx.compose.ui.tooling)
     debugImplementation(libs.androidx.compose.ui.test.manifest)
+    // firebase
+    implementation(libs.firebase.bom.v3270)
+    implementation(libs.com.google.firebase.firebase.auth)
+    implementation(libs.com.google.firebase.firebase.firestore)
+    // Dòng này đã ĐÚNG
+    implementation(libs.firebase.firestore)
+
+    // viewmodel
+    implementation(libs.androidx.lifecycle.viewmodel.compose)
+
+
 }
