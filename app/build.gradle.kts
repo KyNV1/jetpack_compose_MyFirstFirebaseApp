@@ -70,6 +70,6 @@ dependencies {
 
     // viewmodel
     implementation(libs.androidx.lifecycle.viewmodel.compose)
-
-
+    // navigation
+    implementation(libs.androidx.navigation.compose)
 }

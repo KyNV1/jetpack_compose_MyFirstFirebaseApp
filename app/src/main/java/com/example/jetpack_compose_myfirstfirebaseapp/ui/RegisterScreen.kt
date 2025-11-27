@@ -9,10 +9,14 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.text.input.PasswordVisualTransformation
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.viewmodel.compose.viewModel
-import com.example.jetpack_compose_myfirstfirebaseapp.viewmodel.AuthViewModel
+import com.example.jetpack_compose_myfirstfirebaseapp.viewmodel.RegisterViewModel
+import kotlinx.coroutines.delay
 
 @Composable
-fun RegisterScreen(viewModel: AuthViewModel = viewModel()) {
+fun RegisterScreen(
+    viewModel: RegisterViewModel = viewModel(),
+    onRegisterSuccess: () -> Unit
+) {
     var email by remember { mutableStateOf("") }
     var password by remember { mutableStateOf("") }
     var fullName by remember { mutableStateOf("") }
@@ -77,4 +81,12 @@ fun RegisterScreen(viewModel: AuthViewModel = viewModel()) {
             }
         }
     }
+    LaunchedEffect(key1 = viewModel.statusMessage) {
+        if(viewModel.statusMessage.contains("Success")){
+            delay(1000)
+            onRegisterSuccess()
+        }
+
+    }
+
 }
